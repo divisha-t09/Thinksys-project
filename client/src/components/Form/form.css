@@ -1,0 +1,380 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004284;
+}
+
+form {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.entries{
+  border-bottom: 7px solid #004284;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.data{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.left-shift{
+  margin-left: 1.5rem;
+}
+
+
+button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn{
+  background: linear-gradient(to right, #0079cf,#0e9eff);
+}
+
+button[type='button'] {
+  background-color: #da2c3e;
+}
+
+.sbtn{
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.sbtn:hover{
+  box-shadow: inset -2px -2px 5px 2px rgba(0, 0, 0, 0.2) ;
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
+/* Individual entry card */
+.e-card {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+.entry-card {
+  width: 300px;
+  height: 400px;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.entry-card-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  bottom: 4rem;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-bottom: px;
+}
+.icon:hover{
+  opacity: 0.5;
+}
+
+
+/* Employee ID at top left corner */
+.e-i {
+  position: relative;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  bottom: 1.5rem;
+}
+
+.entry-card-content {
+  display: flex;
+  flex-direction: column;
+  /* position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+}
+
+/* Image in the middle */
+.profile-img {
+  padding-right: 20px;
+  padding-left:15px;
+  position: relative;
+  bottom: 5.5rem;
+  align-self: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -20px;
+  margin-left: 25px;
+  /* width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px auto;
+  position: relative;
+  bottom: 6rem;
+  border: 1px solid #004284; */
+}
+
+.outer-ring {
+  position: relative;
+  
+}
+.circle {
+  position: relative;
+  align-self: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top:-9.5rem;
+  left: -0.3rem;
+  /* margin-top: 9.5px; */
+  /* margin-left: 25px; */
+}
+.outer-ring {
+  position: relative;
+  bottom: 3rem;
+  top: -4.6rem;
+  left: 15.5px; 
+  width: 145px;
+  height: 143px;
+   border: 2px solid transparent;
+  border-radius: 100%;
+  pointer-events: none;
+  margin-top: -10px;
+  
+}
+
+
+.outer-ring-green {
+  border-color:  #05AF0C; /* Green color for work from home or work from office */
+}
+
+.outer-ring-red {
+  border-color: #ED8741; /* Red color for on leave */
+}
+
+.status-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 150px;
+  position: relative;
+  left: 3.7rem;
+  top: 3.9rem;
+  z-index: 1;
+  border: 4px solid white;
+}
+
+.status-dot.red {
+  background-color: #ED8741;
+}
+
+.status-dot.green {
+  background-color: #05AF0C;
+}
+
+
+.card-txt{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+
+
+
+/* Name and designation */
+.c-n{
+  position: relative;
+  font-weight: 800;
+  bottom: 15rem;
+  font-size: 1.3rem;
+}
+.c-d {
+  position: relative;
+  bottom: 17rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+/* Work mode */
+.c-w {
+  position: relative;
+  bottom: 19rem;
+  left: 9px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1.33rem;
+}
+
+
+/* Hide email and contact text by default */
+.card-lg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  bottom: 18.5rem;
+}
+
+.ecard {
+  flex-basis: 20%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Icon for email and contact */
+.img_icon {
+  width: 25px;
+  height: 25px;
+}
+
+.ecard img {
+  /* width: 20px; */
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.img_icon:hover {
+  opacity: 0.5;
+}
+
+
+
+.ecard span {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  padding: 5px;
+  background-color: #a8a8a8;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+
+.ecard.active span {
+  display: block;
+  transition-duration: 1s;
+}
+
+.ecard.e-m span,
+.ecard.c-m span,
+.ecard.c-c span {
+  display: none;
+}
+
+.ecard.e-m.active span,
+.ecard.c-m.active span,
+.ecard.c-c.active span {
+  display: block;
+  transition-duration: 200ms;
+
+}
+
+.req {
+  color: red;
+}
+
+
+
+.work-from-home {
+  background: center left 30px/ contain no-repeat url(../../assests/WFH.png);
+  color: #9D0A8A;
+}
+
+.work-from-office {
+  background: center left 29px/ contain no-repeat url(../../assests/WFO.png);
+  color: #05AF0C;
+}
+
+.on-leave {
+  background: center left 72px/ contain no-repeat url(../../assests/OL.png);
+  color: #ED8741;
+}
+
+.w_icon {
+  width: 12px;
+  height: 12px;
+}
+
+
+
+.form-error {
+  color: red;
+  font-size: 0.6rem;
+  position: relative;
+  left: 14.5rem;
+  bottom: 10px;
+  width: 190px;
+}
